@@ -32,6 +32,7 @@
     <script src="assets/static/chunks/479ba886-1501b05203ff7f80.js" async=""></script>
     <script src="assets/static/chunks/2619-3c9e02e22d10480a.js" async=""></script>
     <script src="assets/static/chunks/276-5f2c610e91c7ff6d.js" async=""></script>
+    <script src="assets/static/chunks/i can read ts sob.js" async=""></script>
     <script src="assets/static/chunks/app/page-ceec7661b4db0dff.js" async=""></script>
     <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-05CH1KMKW9" as="script" />
     <meta name="next-size-adjust" content="" />
@@ -42,10 +43,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <title>WhatFemboysAre.Online</title>
+    <title>WhatExpsAre.Online</title>
     <meta name="description" content="What Femboys Are Online" />
     <meta property="og:title" content="WhatFemboysAre.Online" />
-    <meta property="og:description" content="What Femboys Are Online" />
+    <meta property="og:description" content="#1 Roblox exploiting femboy status tracker" />
     <meta property="og:url" content="https://WhatFemboysAre.Online" />
     <meta property="og:site_name" content="WhatFemboysAre.Online" />
     <meta property="og:image" content="https://WhatFemboysAre.Online/Logo.png" />
@@ -55,7 +56,7 @@
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="WhatFemboysAre.Online" />
-    <meta name="twitter:description" content="What Femboys Are Online" />
+    <meta name="twitter:description" content="#1 Roblox exploit status tracker" />
     <meta name="twitter:image" content="WhatFemboysAre.Online/Logo.png" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16" />
     <script src="assets/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
@@ -106,7 +107,7 @@
 <div style="position: relative;">
     <div>
         <div class="weao-_c4fbb0" style="position: relative;">
-            <div class="weao-_667c3f weao-_ef563d" style="will-change: transform, opacity; opacity: 1;">
+            <div class="weao-_667c3f" style="will-change: transform, opacity; opacity: 1;">
                 <div class="weao-_156104 weao-_28611c"></div>
                 <div class="weao-_216efe">
                     <div class="weao-_132ead">
@@ -119,7 +120,7 @@
                             <p class="weao-_861c50">Last online : 12/31/2025 at 9:45 PM UTC</p> <!-- add code for hide if online currently later... god im gonna have to fuck around with bots... :sob:-->
                         </div>
                     </div><span class="weao-_063a0c weao-_28611c">(AUTO UPDATE WITH DISCORD STATUS)</span> <!--change class to weao-_6618f1 for offline-->
-                    <div class="weao-_ac2f06" style="height: auto; opacity: 1;">
+                    <div class="weao-_ac2f06" style="height: auto; opacity: 1; display: none;">
                         <div class="weao-_a4d3cf">
                             <div class="weao-_75104e weao-_54d16f">
                                 <div class="weao-_1863f0">
@@ -166,8 +167,29 @@
     <!--$-->
     <!--/$-->
     <div class="weao-_d72b24"></div>
+<script>
+const panel = document.querySelector(".weao-_216efe");
+const trigger = document.querySelector(".weao-_c4fbb0");
 
+if (panel && trigger) {
+  trigger.addEventListener("click", () => {
+    document.querySelector(".weao-_ac2f06").style.display = "block";
+    document.querySelector(".weao-_ac2f06").classList.toggle("weao-_ef563d");
+  });
+}
+document.addEventListener("click", (e) => {
+  if (
+    panel.classList.contains("weao-_ef563d") &&
+    !panel.contains(e.target) &&
+    !trigger.contains(e.target)
+  ) {
+    panel.classList.remove("weao-_ef563d");
+  }
+});
+
+
+
+</script>
 </body>
-
 
 </html>
